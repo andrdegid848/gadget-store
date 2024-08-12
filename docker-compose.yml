@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  gadget-store-app:
+    build: .
+    ports:
+      - "8082:8082"
+    networks:
+      - gadget-store-net
+
+networks:
+  gadget-store-net:
+    driver: bridge
